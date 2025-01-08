@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form>
+            <div>
+                Name: 
+                <input type="text" placeholder="Full Name" name="fullName">
+            </div>
+            <div>
+                Password: 
+                <input type="password" placeholder="password" name="password">
+            </div>
+            <div>
+                Gender: 
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
+                <input type="radio" name="gender" value="prefer not to say">Prefer Not to Say
+            </div>
+            <div>
+                <input name="block" list="blocks" placeholder="Block">
+                <datalist id="blocks">
+                    <option value="Bisalpur">
+                    <option value="Bilsanda">
+                    <option value="Barkhera">
+                    <option value="Pilibhit">
+                    <option value="Puranpur">
+                </datalist>
+            </div>
+        </form>
+    </body>
+</html>
