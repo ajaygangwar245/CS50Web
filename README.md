@@ -38,6 +38,7 @@ Each project is stored in its respective directory. Navigate to the correspondin
 1. Clone the repository:
    ```bash
    git clone https://github.com/ajaygangwar245/CS50Web.git
+   cd CS50Web
    ```
 
 2. Navigate to the desired directory:
