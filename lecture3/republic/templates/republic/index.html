@@ -1,0 +1,16 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is it Republic Day?</title>
+        <link href="{% static 'republic/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% if republicday %}
+            <h1>Yes</h1>
+        {% else %}
+            <h1>No</h1>
+        {% endif %}
+    </body>
+</html>
