@@ -1,14 +1,3 @@
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -24,70 +13,34 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-build/
-dist/
 *.egg
 *.egg-info/
-develop-eggs/
-downloads/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
+dist/
+build/
 *.wheel
 
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.cache
-nosetests.xml
-coverage.xml
-
-# Translations
-*.mo
-*.pot
-
-# PyBuilder
-target/
-
-### Django ###
-# Logs and bytecode
+# Django stuff:
 *.log
+*.pot
 *.pyc
-
-# Secret keys and environment settings
-*.env
-local_settings.py
-
-# Database files
-db.sqlite3
 *.sqlite3
 
-# Static and media files
-static/
-staticfiles/
+# Media files
 media/
 
-# Editor and IDE configurations
+# Static files
+# staticfiles/
+# static/
+
+# Django secret key and sensitive settings
+*.env
+
+# Local configurations
 .settings/
 .idea/
 .vscode/
 *.swp
 *.swo
 
-# PyCharm project files
-.idea/
-
-### Windows ###
+# Windows system files
 Thumbs.db
