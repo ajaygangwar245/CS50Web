@@ -1,0 +1,64 @@
+-- clone repo:
+git clone <URL>
+
+-- add file to repo:
+git add <file_name>
+
+-- commit changes to file/repo:
+git commit -m "<message>"
+
+-- status of branch and current state:
+git status
+
+-- push committed changes:
+git push
+
+-- add all files of current directory:
+git add *
+
+-- commit changes to all files added:
+git commit -am "<message>"
+
+-- pull or download latest file from github repo:
+git pull
+
+-- log of every commit or changes made:
+git log
+
+-- reset changes mistakenly done:
+git reset
+
+    -- reset using commit hash got from git log 
+    git reset --hard <commit_hash>
+
+    -- reset using main code present at github repo online
+    git reset --hard <origin/master>
+
+-- create new branch
+git checkout -b <branch_name>
+
+-- check the current branch after branching the repo
+git branch 
+
+-- switch to an existing branch
+git checkout <branch_name>
+
+-- merge conflicts occurs when two or more person made changes to same
+    line of code differently but merged it back to main repo
+
+-- merge branches to master
+git merge <branch_name>
+
+-- fork
+making copy of someone's repo online to your account
+
+-- pull request
+made fixes to someone's code and requested changes to be merged
+
+
+
+
+
+
+
+
