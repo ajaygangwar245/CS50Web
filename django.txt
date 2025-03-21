@@ -1,0 +1,20 @@
+-- create project:
+django-admin startproject <project_name>
+
+-- create app:
+python manage.py startapp <app_name>
+
+-- run server:
+python manage.py runserver
+
+-- command to make migrate the models:
+python manage.py makemigrations
+
+-- apply migrations:
+python manage.py migrate
+
+-- use django command shell for using python commands in django app:
+python manage.py shell
+
+-- django admin account
+python manage.py createsuperuser

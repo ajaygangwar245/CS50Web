@@ -1,0 +1,23 @@
+-- import
+from flights.models import Flight
+
+-- create flight
+f = Flight(origin="New York", destination="London", duration=415)
+
+-- save
+f.save()
+
+-- query all objects
+flights = Flight.objects.all()
+
+-- isolate first object
+flight = flights.first()
+
+-- Import all models
+from flights.models import *
+
+-- filter command (finds all)
+Airport.objects.filter(city="New York")
+
+-- get command to get only one result
+Airport.objects.get(city="New York")
