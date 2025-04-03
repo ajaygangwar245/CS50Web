@@ -25,11 +25,14 @@ def index(request):
 #         })
 
 def flight(request, flight_id):
-    # can use pk (primary key) instead of id
+    # we can use pk (primary key) instead of id
     flight = Flight.objects.get(id=flight_id)
     return render(request, "flights/flight.html", {
         "flight": flight,
-        "passengers": flight.passengers.all()
+        # passengers that are on flight
+        "passengers": flight.passengers.all(),
+        # passengers that are not on flight (or excluding that are on flight)
+        "non_passengers": Passenger.objects.exclude(flights=flight).all()  
     })
     
 def book(request, flight_id):
@@ -37,6 +40,5 @@ def book(request, flight_id):
         flight = Flight.objects.get(id=flight_id)
         passenger = Passenger.objects.get(id=int(request.POST["passenger"]))
         passenger.flights.add(flight)
-        return HttpResponseRedirect(reverse("flights", args=(flight.id,)))
+        return HttpResponseRedirect(reverse("flight", args=(flight.id,)))
 
-    
