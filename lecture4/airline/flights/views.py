@@ -10,20 +10,6 @@ def index(request):
         "flights": Flight.objects.all()
     })
 
-# def flight(request, flight_id):
-#     # can use pk (primary key) instead of id
-#     try: 
-#         flight = Flight.objects.get(id=flight_id)
-#     except:
-#         return render(request, "flights/error.html", {
-#             "id": flight_id
-#         })
-#     else:
-#         return render(request, "flights/flight.html", {
-#             "flight": flight,
-#             "passengers": flight.passengers.all()
-#         })
-
 def flight(request, flight_id):
     # we can use pk (primary key) instead of id
     flight = Flight.objects.get(id=flight_id)
